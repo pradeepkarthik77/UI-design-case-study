@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="PBKSvsRCB.css">
+<script src="PBKSvsRCB.js"></script>
+</head>
+<body onload="openit();pbks_battingtable();rcb_bowlingtable();rcb_battingtable();pbks_bowlingtable();">
+
+
+
+
+  <h1 align="center"><span style="color:red;">PBKS</span><span style="font-size: smaller;">vs</span><span style="color:crimson">RCB</span></h1>
+
+  <button class="navbuttons" onclick="window.location.href='PBKSvsRCB.html'" id="Home_nav">Home</button>
+  <button class="navbuttons" onclick="window.location.href='PBKSvsRCB.html'" id="Schedule_nav">Schedule</button>
+  <button class="navbuttons" onclick="window.location.href='PBKSvsRCB.html'" id="Take_A_Quiz_nav">Take A Quiz</button>
+  <button class="navbuttons" onclick="window.location.href='PBKSvsRCB.html'" id="Galley_nav">Gallery</button>
+  <button class="navbuttons" onclick="window.location.href='PBKSvsRCB.html'" id="Matches_nav" style="background-color: red;">Matches</button>
+  <button class="navbuttons" onclick="window.location.href='PBKSvsRCB.html'" id="Brief_nav">Brief Stats</button>
+  <button class="navbuttons" onclick="window.location.href='PBKSvsRCB.html'" id="Points_Table_nav">Points Table</button>
+  <button class="navbuttons" onclick="window.location.href='PBKSvsRCB.html'" id="Tweets_nav">Tweets</button>
+  <button class="navbuttons" onclick="window.location.href='PBKSvsRCB.html'" id="Highlights_nav">Highlights</button>
+
+
+<button class="tabbutton" onclick="openPage('PBKS', this)" id="defaultOpen">PBKS's Innings</button>
+<button class="tabbutton" onclick="openPage('RCB', this)">RCB's Innings</button>
+<button class="tabbutton" onclick="openPage('Matchinfo', this)">Match Info</button>
+<button class="tabbutton" onclick="openPage('About', this)">About</button>
+
+<br><br><br><br>
+
+<div id="PBKS" class="tabcontent">
+<div id="PBKS_batting" style="margin-top: 20px;">
+  <table>
+  <thead>
+    <th>SCORECARD</th>
+  </thead>
+    <thead>
+      <th style="color:#ddd;background-color: red;">Punjab Kings won by 34 runs</th>
+    </thead>
+    <thead>
+      <th style="color:#ddd;background-color: red;">Punjab Kings Innings 179/5(20 ovr)</th>
+    </thead>
+  </table>
+<button class="accordion">Batsman</button>
+<div class="panel">
+                          <table id="pbks_batting_table">
+                          <thead>
+                            <tr>
+                              <td>Batsman</td>
+                              <td></td>
+                              <td>R</td>
+                              <td>B</td>
+                              <td>4s</td>
+                              <td>6s</td>
+                              <td>SR</td>
+                            </tr>
+                          </thead>
+                          <tr id="pbks_extras">
+                            <td class="pbks_color">Extras</td>
+                          </tr>
+                          <tr id="pbks_total">
+                            <td class="pbks_color">Total</td>
+                          </tr>
+                          </table>
+                          <table>
+                            <tr id="pbks_did_not_bat" class="pbks_color">
+                              <td style="color: black;">Did Not Bat:</td>
+                            </tr>
+                          </table>
+</div>
+</div>
+
+<div id="RCB_bowling">
+<button class="accordion">Bowler</button>
+<div class="panel">
+                  <table id="rcb_bowling_table">
+                  <thead style="text-align: left;">
+                  <tr>
+                    <th>Bowler</th>
+                    <th>O</th>
+                    <th>M</th>
+                    <th>R</th>
+                    <th>W</th>
+                    <th>NB</th>
+                    <th>WD</th>
+                    <th>ECO</th>
+                  </tr>
+                  </thead>
+                  <tr></tr>
+                  </table>
+</div>
+</div>
+</div>
+
+<div id="RCB" class="tabcontent">
+  <div id="RCB_batting" style="margin-top: 20px;">
+    <table>
+      <thead>
+        <th>SCORECARD</th>
+      </thead>
+        <thead>
+          <th style="color:#ddd;background-color: red;">Punjab Kings won by 34 runs</th>
+        </thead>
+        <thead>
+          <th style="color:#ddd;background-color: crimson;">Royal Challengers Bangalore Innings 145/8(20 ovr)</th>
+        </thead>
+      </table>
+    <button class="accordion">Batsman</button>
+    <div class="panel">
+                        <table id="rcb_batting_table">
+                          <thead>
+                            <tr>
+                              <td>Batsman</td>
+                              <td></td>
+                              <td>R</td>
+                              <td>B</td>
+                              <td>4s</td>
+                              <td>6s</td>
+                              <td>SR</td>
+                            </tr>
+                          </thead>
+                          <tr id="rcb_extras">
+                            <td class="rcb_color">Extras</td>
+                          </tr>
+                          <tr id="rcb_total">
+                            <td class="rcb_color">Total</td>
+                          </table> 
+                        </tr> 
+                          <table>
+                          <tr id="rcb_did_not_bat" class="rcb_color">
+                            <td style="color: black;">Did Not Bat:</td>
+                          </tr>
+                          </table> 
+    </div>
+    </div>
+    
+    <div id="PBKS_bowling">
+    <button class="accordion">Bowler</button>
+    <div class="panel">
+                  <table id="pbks_bowling_table">
+                  <thead style="text-align: left;">
+                  <tr>
+                    <th>Bowler</th>
+                    <th>O</th>
+                    <th>M</th>
+                    <th>R</th>
+                    <th>W</th>
+                    <th>NB</th>
+                    <th>WD</th>
+                    <th>ECO</th>
+                  </tr>
+                  </thead>
+                  <tr></tr>
+                  </table>
+    </div>
+    </div>
+</div>
+
+<div id="Matchinfo" class="tabcontent" style="margin-top: 20px;">
+                  <table>
+                    <thead>
+                      <th>Match Info</th>
+                    </thead>
+                  </table>
+                  <table id="match_info">
+                  <tr>
+                    <td>Match</td>
+                    <td>PBKS vs RCB, 26th Match, Indian Premier League 2021</td>
+                  </tr>
+                  <tr>
+                    <td>Date and Time</td>
+                    <td id="match_date"></td>
+                  </tr>
+                  <tr>
+                    <td>Toss</td>
+                    <td>Royal Challengers Bangalore won the toss and opt to bowl</td>
+                  </tr>
+                  <tr>
+                    <td>Venue</td>
+                    <td>Narendra Modi Stadium, Ahmedabad</td>
+                  </tr>
+                  <tr>
+                    <td>Umpires</td>
+                    <td>Virender Sharma, Sundaram Ravi</td>
+                  </tr>
+                  <tr>
+                    <td>Match Refree</td>
+                    <td>Shakti Singh</td>
+                  </tr>
+                  <tr>
+                    <td class="pbks_color">Punjab Kings Squad</td>
+                  </tr>
+                  <tr class="pbks_color">
+                    <td>Playing XI</td>
+                    <td id="pbkss_playing_xi"></td>
+                  </tr>
+                  <tr class="pbks_color">
+                    <td>Bench</td>
+                    <td>Mayank Agarwal, Moises Henriques, Arshdeep Singh, Mandeep Singh, Dawid Malan, Jalaj Saxena, Murugan Ashwin, Sarfaraz Khan, Fabian Allen, Saurabh Kumar, Jhye Richardson, Ishan Porel, Utkarsh Singh, Darshan Nalkande</td>
+                  </tr>
+                  <tr class="rcb_color">
+                    <td>Royal Challengers Bangalore Squad</td>
+                  </tr>
+                  <tr class="rcb_color">
+                    <td>Playing XI</td>
+                    <td id="rcbs_playing_xi"></td>
+                  </tr>
+                  <tr class="rcb_color">
+                    <td>Bench</td>
+                    <td>Washington Sundar, Daniel Christian, Sachin Baby, Srikar Bharat, Navdeep Saini, Pavan Deshpande, Mohammed Azharuddeen, Finn Allen, Suyash Prabhudessai</td>
+                  </tr>
+                  </table>
+</div>
+
+<div id="About" class="tabcontent" style="margin-top: -70px;">
+  <div style="background-color: white;height: 325px;margin-top: 85px;">
+    <table>
+      <thead>
+        <th>Follow Us On</th>
+      </thead>
+      </table>
+    <div class="zoom" style="margin-left: 400px;margin-top: 30px;" onclick="window.location.href='https://www.facebook.com/cricbuzz/'">
+      <div class="background">
+        <svg height="200px" width="200px" style="font-size: 220px;font-family: sans-serif;font-weight: 700">
+          <circle cx="100" cy="100" r="100" fill="blue"></circle>
+          <text x="65" y="200" fill="white">f</text> 
+          </svg>
+          <div class="details" style="font-size: larger;text-align: center;top: 95%;color: black;">@cricbuzz</div>
+      </div>
+      </div>
+  
+      <div class="zoom" style="margin-left: 650px;margin-top: -200px;" onclick="window.location.href='https://www.instagram.com/cricbuzzofficial/?hl=en'">
+        <div class="background">
+        <svg height="200px" width="200px">
+          <rect width="200px" height="200px" rx="50px" ry="50px"></rect>
+          <rect width="150px" height="150px" x="25px" y="25px" rx="50px" ry="50px" style="stroke-width: 15;stroke:white"></rect>
+          <circle cx="100px" cy="100px" r="40" style="stroke: white;stroke-width: 15"></circle>
+          <circle cx="140px" cy="50px" r="10" fill="white"></circle>
+          </svg>
+          <div class="details" style="font-size: larger;text-align: center;font-size: 25px;top: 97%;color:black;">@cricbuzzofficial</div>
+  
+        </div>
+        </div>
+  
+        <div class="zoom" style="margin-left: 900px;margin-top: -200px;" onclick="window.location.href='mailto:cricbuzz@gmail.com'">
+          <div class="background">
+            <svg height="200px" width="250px" style="background-color: #e5e4e2;">
+              <rect rx="20" ry="20" fill="#4285F4" width="60px" height="200px"></rect>
+              <rect rx="20" ry="20" fill="#34A853" width="60px" height="200px" x="190" y="0"></rect>
+              <polygon points="18 0, 125 66,230 0,234 1,236 1.5,238 2,240 3,242 4,243 5,245 7,246 8,247 9,248 11,250 18,250 60,125 136,0 60,0 18,1 13,2 11,5 7,6 5.5,7 4.5,8 4,9 3,10 2.5" fill="red" opacity="0.8">
+              </polygon>
+              
+              <polygon points="190 25,190 96,250 60,250 18,248 11,247 9,246 8,245 7,243 5,242 4,240 3,238 2,236 1.5,234 1,230 0" fill="#FBBC05">
+              </polygon>
+              
+              <polygon points="18 0,100 0,60 26" fill=" #e5e4e2"></polygon>
+              <polygon points="232 0,150 0,190 25" fill="#e5e4e2"></polygon>
+              
+              </svg>
+              <div class="details" style="font-size: larger;text-align: center;font-size: 23px;top: 97%;color:black;">www.cricbuzz@gmail.com</div>
+          </div>
+          </div>
+  </div>
+</div>
+</body>
+</html>

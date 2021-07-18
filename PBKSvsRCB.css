@@ -1,0 +1,148 @@
+body, html {
+  height: 100%;
+  font-family: Arial;
+  background-image: url('https://github.com/pradeepkarthik77/UI-design-case-study/blob/main/back.jpg?raw=true');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: cursive;
+  font-size: 25px;
+}
+
+h1{
+  font-size: 50px;
+}
+
+.accordion {
+    background-color: cornflowerblue;
+    color: goldenrod;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 25px;
+    transition: 0.4s;
+    font-weight: bolder;
+    font-family: cursive;
+  }
+  
+  .active, .accordion:hover {
+    background-color: dodgerblue; 
+  }
+  
+  .panel {
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .tabbutton {
+    background-color: #555;
+    color: goldenrod;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 20px;
+    width: 25%;
+    border-radius: 20px;
+    opacity: 80%;
+    margin-top: 30px;
+  }
+
+  .tabbutton:hover{
+    color: red;
+    opacity: 100%;
+  }
+
+  table {
+    border-collapse: collapse;
+    background-color: white;
+    width: 100%;
+      }
+    
+      th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+    }
+  
+  tr:hover {background-color: #f5f5f5;}
+
+  thead{
+    background-color: cornflowerblue;
+    font-weight: bold;
+  }
+
+  .pbks_color
+  {
+    color: red;
+  }
+
+  .rcb_color{
+    color: crimson;
+  }
+
+  .not_out{
+    background-color: lightgrey;
+  }
+
+  .zoom{
+    width: 200px;
+    height: 200px;
+    margin:auto;
+    
+}
+.zoom:hover{
+    transform: scale(1.2); 
+    transition: transform .4s;
+    cursor: pointer;
+ }
+ .background{
+     width: 200px;
+     height:200px;
+     position: relative;
+ }
+ .background:hover .details
+ {
+ visibility: visible;
+ opacity: 1;
+ }
+ .details 
+{
+position: absolute;
+top: 80%;
+bottom: 30%;
+left: 0;
+right: 0;
+background: rgba(29, 106, 154, 0.72);
+color:gold;
+visibility: hidden;
+opacity: 0;
+text-align: center;
+}
+
+.navbuttons {
+  background-color: #555;
+  color: goldenrod;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 20px;
+  width: 11.11%;
+  border-right: 0.5px solid #808080;
+}
+
+.navbuttons:hover
+{
+    background-color: red;
+    color: white;
+}
+
+
+  
+  
